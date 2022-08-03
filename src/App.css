@@ -6,3 +6,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* For Tailwind ========= */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
