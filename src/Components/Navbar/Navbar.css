@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .nav-right-left .main-menu {
@@ -62,6 +63,11 @@
 #toggler {
     display: none;
 }
+@media (min-width: 769px) {
+    .nav-right-container {
+        height: auto !important;
+    }
+}
 
 @media (max-width: 768px) {
     .navbar-wrapper {
@@ -73,24 +79,22 @@
 
     .nav-container {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
     }
     .nav-container .nav-left {
         width: 100%;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
     }
     .nav-container .nav-right {
         flex-direction: column;
-        align-items: flex-start;
-        margin: 0.5rem 0;
     }
     .nav-container .nav-right-right {
-        margin-top: 0.5rem;
         flex-direction: column;
-        align-items: flex-start;
+    }
+    .nav-container .nav-right-left {
+        margin-top: 0.75rem;
+        margin-bottom: 0.9rem;
     }
     .nav-container .nav-right-right > h6 {
         margin-right: 0;
@@ -98,7 +102,6 @@
     }
     .nav-container .nav-right .main-menu {
         flex-direction: column;
-        align-items: flex-start;
         width: 100%;
         margin-left: 0;
     }
