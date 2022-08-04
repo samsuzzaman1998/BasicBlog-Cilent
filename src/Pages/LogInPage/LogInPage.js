@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./LoginPage.css";
 
 const LogInPage = () => {
@@ -32,9 +33,18 @@ const LogInPage = () => {
                     />
                 </div>
                 <div class="form-control w-40 mx-auto mt-12">
-                    <button class="btn btn-outline btn-secondary">
-                        Success
-                    </button>
+                    <button class="btn btn-outline btn-secondary">Login</button>
+                </div>
+                <div className="mt-6">
+                    <p className="text-center text-sm text-light ">
+                        New here?{" "}
+                        <Link
+                            to="/register"
+                            className="text-primary underline hover:text-secondary"
+                        >
+                            create account
+                        </Link>
+                    </p>
                 </div>
             </div>
         </section>
