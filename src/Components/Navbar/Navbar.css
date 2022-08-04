@@ -8,12 +8,13 @@
     justify-content: space-between;
     align-items: center;
 }
-.nav-center .main-menu {
+
+.nav-right-left .main-menu {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-center .main-menu li a {
+.nav-right-left .main-menu li a {
     text-transform: uppercase;
     margin: 0 0.25rem;
     padding: 0.25rem 0.5rem;
@@ -21,29 +22,33 @@
     font-size: calc(0.5rem + 0.5vw);
     font-weight: 400;
 }
-.nav-center .main-menu li a.active {
+.nav-right-left .main-menu li a.active {
     color: #ff1e00;
     background-color: #bbdef0;
 }
-
 .nav-right {
+    display: flex;
+    align-items: center;
+}
+.nav-right-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.nav-right > img {
+.nav-right-right > img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-right: 5px;
 }
-.nav-right > h6 {
+.nav-right-right > h6 {
     font-size: calc(0.4rem + 0.45vw);
     text-transform: uppercase;
     font-weight: 500;
+    margin-right: 10px;
 }
 
-.nav-right .nav-btn {
+.nav-right-right .nav-btn {
     text-transform: capitalize;
     font-size: calc(0.5rem + 0.45vw);
     background-color: #157f1f;
@@ -51,4 +56,50 @@
     padding: 0.25rem 0.75rem;
     border-radius: 5px;
     border: 1px solid #157f1f;
+}
+
+/* ========== Responsive Navbar ========= */
+#toggler {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-wrapper {
+        padding: 0.75rem;
+    }
+    #toggler {
+        display: block;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .nav-container .nav-left {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-container .nav-right {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0.5rem 0;
+    }
+    .nav-container .nav-right-right {
+        margin-top: 0.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-container .nav-right-right > h6 {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .nav-container .nav-right .main-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 0;
+    }
 }

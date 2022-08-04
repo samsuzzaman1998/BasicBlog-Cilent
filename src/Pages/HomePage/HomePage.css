@@ -1,0 +1,12 @@
+.blog-container {
+    padding: 5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-content-part {
+    flex: 9;
+    margin-right: 2rem;
+}
+.blog-aside-part {
+    flex: 3;
+}
