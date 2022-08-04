@@ -1,7 +1,11 @@
 .navbar-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
     width: 100%;
     padding: 1rem 2rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 .nav-container {
     display: flex;

@@ -1,4 +1,5 @@
 import React from "react";
+import Categories from "../../Components/Categories/Categories";
 import SingleBlog from "../../Components/SingleBlog/SingleBlog";
 import "./HomePage.css";
 
@@ -16,7 +17,9 @@ const HomePage = () => {
                         <SingleBlog />
                     </div>
                 </div>
-                <div className="blog-aside-part bg-neutral">aside</div>
+                <div className="blog-aside-part bg-neutral py-8 px-4">
+                    <Categories />
+                </div>
             </div>
         </section>
     );
