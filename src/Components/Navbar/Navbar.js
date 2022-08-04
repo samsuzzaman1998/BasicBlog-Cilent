@@ -6,7 +6,9 @@ import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-    const user = true;
+    const user = false;
+
+    // For Navbar =====
     const [open, setOpen] = useState(false);
     const dropdownRef = useRef(null);
     const dropdownWrapperRef = useRef(null);
